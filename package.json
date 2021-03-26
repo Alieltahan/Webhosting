@@ -1,0 +1,26 @@
+{
+  "name": "moshify",
+  "version": "1.0.0",
+  "description": "Web Hosting Company",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web",
+    "Hosting"
+  ],
+  "author": "Ali Eltahan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
