@@ -1,0 +1,44 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 110, 12, 0.6),
+      rgba(73, 231, 45, 0.6)
+    ),
+    url(../img/hero-small.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative;
+
+  @include responsive(tab-port900) {
+    clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to right,
+        rgba(7, 110, 12, 0.6),
+        rgba(73, 231, 45, 0.6)
+      ),
+      url(../img/hero.jpg);
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  &__logo {
+    height: 3.5rem;
+  }
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

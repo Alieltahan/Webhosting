@@ -1,0 +1,3 @@
+@function gridfunction($spacebetween, $total) {
+  @return calc((100% - ($spacebetween * #{$gutter-horizantal})) / $total);
+}
