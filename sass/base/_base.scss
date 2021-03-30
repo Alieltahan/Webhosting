@@ -18,30 +18,20 @@ html {
   //defines the rem! 1 rem = 10 px
   font-size: 62.5%;
 
-  @include responsive(tab-land1200) {
-    font-size: 50%;
-  }
-  @include responsive(tab-port900) {
-    font-size: 45%;
-  }
-  @include responsive(phone600) {
-    font-size: 40%;
-  }
-  @include responsive(phone600) {
-    font-size: 38%;
-  }
-
-  @include responsive(big-desktop1800) {
-    font-size: 75%;
+  @include responsive(bp900) {
+    font-size: 70%;
   }
 }
 
 body {
   box-sizing: border-box;
-  background-color: $color-grey-dark;
 }
 
 ::selection {
   background-color: $color-primary;
   color: $color-white;
+}
+
+a {
+  text-decoration: none;
 }

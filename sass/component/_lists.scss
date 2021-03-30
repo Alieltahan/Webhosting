@@ -1,0 +1,25 @@
+.list {
+  list-style: none;
+  color: var(--color-headings);
+
+  &--inline .list__item {
+    display: inline;
+    margin-right: 2rem;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--tick {
+    list-style-image: url(../img/icons/tick.svg);
+    margin-left: 3rem;
+    .list__item {
+      padding-left: 0rem;
+
+      @include responsive(bp900) {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+}

@@ -29,7 +29,5 @@
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1"
   },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  }
+  "dependencies": {}
 }
