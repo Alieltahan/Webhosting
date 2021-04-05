@@ -408,27 +408,30 @@ h3 {
       .callout .btn {
         justify-self: center; } }
 
-.collapsible {
-  display: block; }
-  .collapsible__container {
-    display: flex;
-    justify-content: space-between; }
-  .collapsible__heading {
-    font-size: 2rem; }
-  .collapsible__chevron {
-    fill: #fff;
-    transform: rotate(-90deg);
-    transition: all 0.3s ease-in-out; }
-  .collapsible__content {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out; }
-  .collapsible--expanded .collapsible__chevron {
-    transform: rotate(0); }
-  .collapsible--expanded + .collapsible__content {
-    max-height: 100vh;
-    opacity: 1; }
+.collapsible__header {
+  display: flex;
+  justify-content: space-between; }
+
+.collapsible__heading {
+  font-size: 2rem; }
+
+.collapsible__chevron {
+  fill: #fff;
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-in-out; }
+
+.collapsible__content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out; }
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0); }
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1; }
 
 .block {
   --padding-vertical: 6rem;

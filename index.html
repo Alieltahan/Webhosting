@@ -14,15 +14,11 @@
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
-    <nav class="nav">
-      <div class="collapsible collapsible--expanded">
-        <a class="nav__brand" href="/">
-          <img src="img/logo.svg" alt="Company Logo" />
-        </a>
-        <svg class="icon icon--white nav__toggler">
-          <use xlink:href="img/icons/sprite.svg#menu"></use>
-        </svg>
-      </div>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"><img src="img/logo.svg" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="img/icons/sprite.svg#menu"></use>
+      </svg>
       <ul class="list nav__list collapsible__content">
         <li class="nav__item"><a href="#">Hosting</a></li>
         <li class="nav__item"><a href="#">VPS</a></li>
@@ -31,15 +27,13 @@
       </ul>
     </nav>
 
-    <div class="collapsible__container">
+    <div class="collapsible">
       <h3 class="collapsible__header">
         <div class="collapsible__heading">Option</div>
-      </h3>
-      <div class="collapsible">
         <svg class="icon icon--primary collapsible__chevron">
           <use xlink:href="/img/icons/sprite.svg#chevron"></use>
         </svg>
-      </div>
+      </h3>
       <div class="collapsible__content">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
         maiores.

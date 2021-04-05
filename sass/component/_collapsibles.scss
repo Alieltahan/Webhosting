@@ -1,12 +1,8 @@
 .collapsible {
-  display: block;
-  &__container {
+  &__header {
     display: flex;
     justify-content: space-between;
   }
-
-  // &__header {
-  // }
   &__heading {
     font-size: 2rem;
   }
@@ -19,16 +15,13 @@
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    // max-width: 0;
-    // display: none;
+    transition: all 0.5s ease-in-out;
   }
   &--expanded &__chevron {
     transform: rotate(0);
   }
-  &--expanded + &__content {
+  &--expanded &__content {
     max-height: 100vh;
     opacity: 1;
-    // max-width: auto;
   }
 }
