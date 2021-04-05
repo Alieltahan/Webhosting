@@ -1,0 +1,23 @@
+.callout {
+  display: flex;
+
+  // &--primary {
+  // }
+  &__content {
+    @include responsive(bp900) {
+      text-align: center;
+    }
+  }
+  // &__heading {
+  // }
+  & .btn {
+    margin-left: 4rem;
+    justify-self: start;
+    align-self: center;
+    padding: 2rem 6rem;
+
+    @include responsive(bp900) {
+      justify-self: center;
+    }
+  }
+}

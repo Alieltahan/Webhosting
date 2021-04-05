@@ -1,0 +1,22 @@
+.testimonial {
+  padding: 3rem;
+  &__image {
+    position: relative;
+    margin: 0 3rem;
+    & > img {
+      width: 100%;
+    }
+    & > .icon-container {
+      position: absolute;
+      top: 3rem;
+      right: -32px;
+    }
+  }
+
+  & .quote,
+  & .quote-author {
+    font-size: 2.4rem;
+    margin-left: 6rem;
+    margin-right: 0rem;
+  }
+}

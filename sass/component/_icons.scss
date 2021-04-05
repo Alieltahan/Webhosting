@@ -13,11 +13,23 @@
   width: 40px;
   height: 40px;
 
+  &--small {
+    width: 30px;
+    height: 30px;
+  }
+
   &--primary {
     fill: var(--color-primary);
   }
 
   &--secondary {
     fill: var(--color-secondary);
+  }
+
+  &--accent {
+    background: var(--color-accent);
+  }
+  &--white {
+    fill: #fff;
   }
 }

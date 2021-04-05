@@ -26,18 +26,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @content;
     }
   }
-  @if $breakpoint == bp600 {
-    @media only screen and (max-width: 37.5em) {
-      //600px
-      @content;
-    }
-  }
   @if $breakpoint == bp500 {
     @media only screen and (max-width: 31.25em) {
       //500px
       @content;
     }
   }
+  @if $breakpoint == bp600 {
+    @media only screen and (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp750 {
+    @media only screen and (max-width: 46.875em) {
+      //750px
+      @content;
+    }
+  }
+
   @if $breakpoint == bp800 {
     @media only screen and (max-width: 50em) {
       //800px

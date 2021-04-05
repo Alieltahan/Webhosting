@@ -14,6 +14,38 @@
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
+    <nav class="nav">
+      <div class="collapsible collapsible--expanded">
+        <a class="nav__brand" href="/">
+          <img src="img/logo.svg" alt="Company Logo" />
+        </a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="img/icons/sprite.svg#menu"></use>
+        </svg>
+      </div>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <div class="collapsible__container">
+      <h3 class="collapsible__header">
+        <div class="collapsible__heading">Option</div>
+      </h3>
+      <div class="collapsible">
+        <svg class="icon icon--primary collapsible__chevron">
+          <use xlink:href="/img/icons/sprite.svg#chevron"></use>
+        </svg>
+      </div>
+      <div class="collapsible__content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+        maiores.
+      </div>
+    </div>
+
     <a href="#" class="link-arrow">Learn More </a>
     <span class="badge badge--secondary">10% Off</span>
     <ul class="list list--tick">
@@ -32,5 +64,132 @@
         <use xlink:href="/img/icons/sprite.svg#wordpress"></use>
       </svg>
     </span>
+
+    <button class="btn btn--primary btn--block">Get Started</button>
+    <a href="#" class="btn btn--secondary btn--block">Get Started</a>
+    <a href="#" class="btn btn--outline btn--block">Get Started</a>
+
+    <div class="input--group">
+      <button class="btn btn--accent">Search</button>
+      <input
+        type="text"
+        name="input"
+        id="#"
+        placeholder="Enter domain name here..."
+        class="input"
+      />
+    </div>
+
+    <div class="card" style="width: 33.3%">
+      <div class="plan plan--popular">
+        <div class="card--secondary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__biling-cycle">/month</span>
+            <span class="badge badge--secondary badge--small">....</span>
+            <span class="plan__description">....</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Websites</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100 GB SSD Storage</li>
+              <li class="list__item">3 GB RAM</li>
+            </ul>
+            <a href="#" class="btn btn--secondary btn--block">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="media__image">
+        <svg class="icon icon--primary">
+          <use xlink:href="/img/icons/sprite.svg#snap"></use>
+        </svg>
+      </div>
+      <div class="media__body">
+        <h3 class="media__title">Easy Start & Managed Updates</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+          omnis et ratione eaque molestias nesciunt cupiditate? Harum sint
+          cupiditate dolor modi earum. Rem culpa cumque magni illum vitae alias
+          sunt.
+        </p>
+      </div>
+    </div>
+
+    <blockquote class="quote">
+      <p class="quote__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        dolorum placeat debitis sint voluptate ratione. Esse, reprehenderit
+        minus culpa eaque commodi tenetur dolorem accusantium iure aliquid
+        nesciunt iste, in perspiciatis.
+      </p>
+
+      <footer>
+        <div class="media">
+          <div class="media__image">
+            <svg class="icon icon--primary quote__line">
+              <use xlink:href="/img/icons/sprite.svg#line"></use>
+            </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title quote__author">John Smith</h3>
+            <p class="quote__company">ABC Company</p>
+          </div>
+        </div>
+      </footer>
+    </blockquote>
+
+    <div class="card testimonial">
+      <div class="grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="img/testimonial.jpg" alt="A happy, smiling customer" />
+          <span class="icon-container icon--accent">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="img/icons/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            optio officiis dolore earum error eaque perferendis laudantium sed
+            praesentium dolorum.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="img/icons/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">John Smith</h3>
+                <p class="quote__company">ABC Company</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="callout callout--primary">
+      <div class="grid grid--1x2">
+        <div class="callout__content">
+          <h2 class="callout__heading">Ready to Get Started?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+            voluptate tempora qui distinctio consequatur aliquid pariatur
+            cupiditate quas cum fugit.
+          </p>
+        </div>
+        <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

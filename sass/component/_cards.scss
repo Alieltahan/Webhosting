@@ -1,0 +1,27 @@
+.card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light);
+
+  &__header,
+  &__body {
+    font-size: 2rem;
+    padding: 2rem 3rem;
+
+    @include responsive(bp600) {
+      font-size: 1.8rem;
+      padding: 1.5rem 2.5rem;
+    }
+  }
+
+  &--secondary &__header {
+    background-color: var(--color-secondary);
+    color: #fff;
+  }
+
+  &--primary &__header {
+    box-shadow: var(--shadow-light);
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+}
