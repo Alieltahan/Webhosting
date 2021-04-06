@@ -12,10 +12,17 @@
     transition: all 0.3s ease-in-out;
   }
   &__content {
-    opacity: 0;
-    max-height: 0;
+    opacity: 1;
+    max-height: 100vh;
     overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    // FIXME
+    // TODO
+    @include responsive(bp800) {
+      opacity: 0;
+      max-height: 0;
+    }
   }
   &--expanded &__chevron {
     transform: rotate(0);

@@ -8,7 +8,7 @@
   --color-border: #ccc;
   --border-radius: 30px;
   --shadow-dark: 0 0 20px 10px #f3f3f3;
-  --shadow-light: 0 1rem 6rem rgba(0, 0, 0, 0.1);
+  --shadow-light: 0 0 30px 20px #e6ebee;
 }
 
 *,
@@ -24,7 +24,10 @@ html {
   font-size: 62.5%;
 
   @include responsive(bp900) {
-    font-size: 70%;
+    font-size: 50%;
+  }
+  @include responsive(bp600) {
+    font-size: 45%;
   }
 }
 

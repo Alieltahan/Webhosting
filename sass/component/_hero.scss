@@ -1,0 +1,41 @@
+.hero {
+  padding-top: 0;
+  @include responsive(bp900) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  }
+  &__container {
+    padding: 0 2rem;
+    text-align: left;
+
+    @include responsive(bp900) {
+      grid-column: 1/-1;
+    }
+  }
+  &__content {
+    align-self: center;
+    @include responsive(bp900) {
+      grid-column: 1/-1;
+    }
+  }
+  &__img {
+    width: 100%;
+    &-top {
+      @include responsive(bp900) {
+        margin-bottom: -8rem;
+      }
+      @include responsive(bp600) {
+        margin-bottom: -3rem;
+      }
+    }
+
+    @include responsive(bp900) {
+      grid-column: 1/-1;
+    }
+  }
+  &__tagline {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+  }
+}

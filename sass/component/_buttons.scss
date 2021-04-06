@@ -2,7 +2,7 @@
   font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 1rem 3rem;
+  padding: 2rem 4vw;
   border-radius: 50px;
   border: none;
   outline: none;
@@ -13,8 +13,16 @@
   color: #fff;
   text-align: center;
   margin: 1rem 0;
+
   @include responsive(bp600) {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  & .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
   }
 
   &--block {

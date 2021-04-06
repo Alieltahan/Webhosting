@@ -1,0 +1,19 @@
+.block {
+  &-domain {
+    max-width: 670px;
+    & .input--group {
+      box-shadow: var(--shadow-light);
+      margin: 4rem auto;
+    }
+    &__prices {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      justify-items: center;
+      justify-content: center;
+      row-gap: 2rem;
+      font-size: 1.4rem;
+    }
+  }
+  &__header {
+  }
+}

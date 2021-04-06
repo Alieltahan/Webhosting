@@ -3,6 +3,10 @@
   border-radius: 10px;
   box-shadow: var(--shadow-light);
 
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
   &__header,
   &__body {
     font-size: 2rem;
@@ -18,10 +22,25 @@
     background-color: var(--color-secondary);
     color: #fff;
   }
+  &--secondary .badge--secondary {
+    background: #02cff1;
+  }
 
   &--primary &__header {
     box-shadow: var(--shadow-light);
     background-color: var(--color-primary);
     color: #fff;
+  }
+  &--primary .badge--primary {
+    background-color: #126de4;
+  }
+
+  &--accent &__header {
+    box-shadow: var(--shadow-light);
+    background-color: var(--color-accent);
+    color: #fff;
+  }
+  &--accent .badge--accent {
+    background: #ca380b;
   }
 }

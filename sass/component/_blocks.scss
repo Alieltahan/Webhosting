@@ -9,6 +9,9 @@
 
 .block__heading {
   margin-top: 0;
+  @include responsive(bp900) {
+    margin-top: 10rem;
+  }
 }
 
 .block--dark {

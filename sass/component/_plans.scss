@@ -1,3 +1,35 @@
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding: 1rem 2rem;
+
+  @include responsive(bp750) {
+    grid-template-columns: minmax(15rem, 50vw);
+    justify-content: center;
+    gap: 8rem;
+  }
+  &--popular {
+    grid-column: 2/3;
+    transform: scale(1.1);
+    @include responsive(bp750) {
+      grid-column: 1/-1;
+    }
+  }
+  &--starting {
+    grid-column: 1/2;
+    @include responsive(bp750) {
+      grid-column: 1/-1;
+    }
+  }
+  &--pro {
+    grid-column: 3/4;
+    @include responsive(bp750) {
+      grid-column: 1/-1;
+    }
+  }
+}
+
 .plan__name {
   color: #fff;
   font-weight: 500;
@@ -42,11 +74,11 @@
   margin-bottom: 2rem;
 }
 
-.plan--popular .card__header {
+.plans--popular .card__header {
   position: relative;
 }
 
-.plan--popular .card__header::before {
+.plans--popular .card__header::before {
   content: url(../img/popular.svg);
   width: 5rem;
   display: inline-block;
@@ -55,6 +87,6 @@
   right: 5%;
 
   @include responsive(bp600) {
-    width: 50px;
+    width: 30px;
   }
 }
