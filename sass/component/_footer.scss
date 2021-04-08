@@ -1,0 +1,63 @@
+.footer {
+  background: #232323;
+  &__sections {
+    font-size: 1.8rem;
+    @include responsive(bp800) {
+      grid-template-columns: 1fr;
+      font-size: 2.1rem;
+    }
+  }
+  &__section {
+    @include responsive(bp800) {
+      padding: 2rem;
+      border-bottom: 1px solid #393939;
+      .list li {
+        // margin: 0;
+        padding: 0.5rem;
+      }
+    }
+    .list li {
+      padding: 1rem;
+      padding-left: 0;
+    }
+  }
+  &__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &__brand {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    order: -2;
+    @include responsive(bp800) {
+      align-items: center;
+      margin-top: 5rem;
+      text-align: center;
+      order: 0;
+    }
+    img {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+  & a {
+    color: #777;
+    transition: color 0.3s;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    opacity: 0.5;
+  }
+  & .collapsible__chevron {
+    display: none;
+    @include responsive(bp800) {
+      display: block;
+    }
+  }
+}

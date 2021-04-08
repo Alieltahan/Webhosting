@@ -1,6 +1,6 @@
 .block {
   &-domain {
-    max-width: 670px;
+    max-width: 80rem;
     & .input--group {
       box-shadow: var(--shadow-light);
       margin: 4rem auto;
@@ -11,9 +11,11 @@
       justify-items: center;
       justify-content: center;
       row-gap: 2rem;
-      font-size: 1.4rem;
+      font-size: 2rem;
+      color: var(--color-headings);
+      font-weight: 600;
     }
   }
-  &__header {
-  }
+  //   &__header {
+  //   }
 }

@@ -1,11 +1,17 @@
 .media {
   display: flex;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   &__image {
-    margin-top: 0.8rem;
+    margin-top: 0rem;
   }
   &__body {
     margin: 0 2rem;
+    @include responsive(bp900) {
+    }
   }
-  //   &__title {
-  //   }
+  &__title {
+    margin-bottom: 2rem;
+    flex-basis: auto;
+  }
 }

@@ -1,22 +1,36 @@
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 8rem;
   padding: var(--padding-vertical) 2rem;
 }
 
 .block__header {
   text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  @include responsive(bp900) {
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+  }
 }
 
 .block__heading {
   margin-top: 0;
   @include responsive(bp900) {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
 }
 
 .block--dark {
   background: #000;
   color: #7b858b;
+  h1,
+  h2,
+  h3 {
+    color: #fff;
+  }
+  p {
+    color: #7b858b;
+  }
 }
 
 .block--dark .block__heading {
@@ -25,12 +39,16 @@
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+
+  @include responsive(bp800) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+  }
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .container {

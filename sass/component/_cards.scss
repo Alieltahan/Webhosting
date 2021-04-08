@@ -27,7 +27,6 @@
   }
 
   &--primary &__header {
-    box-shadow: var(--shadow-light);
     background-color: var(--color-primary);
     color: #fff;
   }
@@ -36,7 +35,6 @@
   }
 
   &--accent &__header {
-    box-shadow: var(--shadow-light);
     background-color: var(--color-accent);
     color: #fff;
   }

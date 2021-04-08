@@ -6,6 +6,8 @@
 
     @include responsive(bp900) {
       grid-template-columns: 1fr;
+      align-items: center;
+      text-align: center;
     }
   }
 
@@ -18,5 +20,9 @@
     @include responsive(bp750) {
       grid-template-columns: 1fr;
     }
+  }
+
+  &--1x5 {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

@@ -1,5 +1,9 @@
 .testimonial {
   padding: 3rem;
+
+  &.card:hover {
+    transform: scale(1);
+  }
   &__image {
     position: relative;
     margin: 0 3rem;
